@@ -2,232 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Finance Dashboard | Power BI</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#eef3fb;
-color:#222;
-}
-
-/* Navbar */
-
-nav{
-position:fixed;
-top:0;
-width:100%;
-padding:18px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:#ffffffee;
-backdrop-filter:blur(10px);
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-z-index:1000;
-}
-
-.logo{
-font-size:24px;
-font-weight:700;
-color:#0d6efd;
-}
-
-nav ul{
-display:flex;
-gap:30px;
-list-style:none;
-}
-
-nav a{
-text-decoration:none;
-color:#333;
-font-weight:500;
-}
-
-nav a:hover{
-color:#0d6efd;
-}
-
-/* Hero */
-
-.hero{
-
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-
-background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url("dashboard.png");
-
-background-size:cover;
-background-position:center;
-
-color:white;
-text-align:center;
-
-}
-
-.hero h1{
-
-font-size:60px;
-
-}
-
-.hero p{
-
-margin:20px 0;
-font-size:20px;
-
-}
-
-.btn{
-
-display:inline-block;
-
-padding:15px 35px;
-
-background:#0d6efd;
-
-color:white;
-
-text-decoration:none;
-
-border-radius:8px;
-
-transition:.3s;
-
-font-weight:bold;
-
-}
-
-.btn:hover{
-
-background:#0047cc;
-
-transform:translateY(-3px);
-
-}
-
-.container{
-
-width:90%;
-max-width:1200px;
-
-margin:auto;
-
-padding:70px 0;
-
-}
-
-.title{
-
-text-align:center;
-
-font-size:40px;
-
-margin-bottom:40px;
-
-color:#0d6efd;
-
-}
-
-/* Dashboard */
-
-.dashboard{
-
-background:white;
-
-padding:30px;
-
-border-radius:20px;
-
-box-shadow:0 10px 30px rgba(0,0,0,.1);
-
-}
-
-.dashboard img{
-
-width:100%;
-
-border-radius:15px;
-
-}
-
-/* Cards */
-
-.grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
-gap:25px;
-
-margin-top:40px;
-
-}
-
-.card{
-
-background:white;
-
-padding:30px;
-
-border-radius:15px;
-
-box-shadow:0 10px 20px rgba(0,0,0,.08);
-
-transition:.3s;
-
-}
-
-.card:hover{
-
-transform:translateY(-8px);
-
-}
-
-.card h3{
-
-color:#0d6efd;
-
-margin-bottom:15px;
-
-}
-
-/* Footer */
-
-footer{
-
-background:#111827;
-
-color:white;
-
-text-align:center;
-
-padding:25px;
-
-margin-top:60px;
-
-}
-
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -237,7 +19,7 @@ margin-top:60px;
 
 <div class="logo">
 
-Finance Dashboard
+📊 Finance Dashboard
 
 </div>
 
@@ -249,17 +31,43 @@ Finance Dashboard
 
 <li><a href="#features">Features</a></li>
 
+<li><a href="#about">About</a></li>
+
 <li><a href="#developer">Developer</a></li>
 
 </ul>
 
 </nav>
 
-<section class="hero">
+<header>
 
-<h1>Finance Dashboard</h1>
+<div class="left">
 
-<p>Interactive Power BI Dashboard Project</p>
+<span class="tag">
+
+Power BI Project
+
+</span>
+
+<h1>
+
+Finance Dashboard
+
+</h1>
+
+<h2>
+
+Interactive Power BI Dashboard
+
+</h2>
+
+<p>
+
+A professional finance dashboard developed using Microsoft Power BI.
+It provides insights into Total Sales, Profit,
+COGS, Units Sold and Country Analysis using interactive visualizations.
+
+</p>
 
 <a href="#dashboard" class="btn">
 
@@ -267,99 +75,211 @@ View Dashboard
 
 </a>
 
-</section>
+</div>
 
-<div class="container">
+<div class="right">
+
+<img src="dashboard.png" alt="Dashboard">
+
+</div>
+
+</header>
+
+<section class="kpis">
+
+<div class="kpi">
+
+<h3>Total Sales</h3>
+
+<h1>58.5K</h1>
+
+<p>Overall Sales Performance</p>
+
+</div>
+
+<div class="kpi">
+
+<h3>Total Profit</h3>
+
+<h1>42.4K</h1>
+
+<p>Net Profit</p>
+
+</div>
+
+<div class="kpi">
+
+<h3>Total COGS</h3>
+
+<h1>16.1K</h1>
+
+<p>Cost of Goods Sold</p>
+
+</div>
+
+<div class="kpi">
+
+<h3>Units Sold</h3>
+
+<h1>5.4K</h1>
+
+<p>Total Units</p>
+
+</div>
+
+</section>
 
 <section id="dashboard">
 
-<h2 class="title">
+<h2>
 
 Dashboard Preview
 
 </h2>
 
-<div class="dashboard">
-
 <img src="dashboard.png">
-
-</div>
 
 </section>
 
 <section id="features">
 
-<h2 class="title">
+<h2>
 
-Project Features
+Key Features
 
 </h2>
 
-<div class="grid">
+<div class="cards">
 
 <div class="card">
+
 <h3>📊 KPI Cards</h3>
-<p>Total Sales, Profit, COGS and Units Sold.</p>
+
+<p>
+
+Interactive KPI Cards showing business performance.
+
+</p>
+
 </div>
 
 <div class="card">
+
 <h3>📈 Sales Analysis</h3>
-<p>Monthly Sales Performance Analysis.</p>
+
+<p>
+
+Monthly sales trend visualization.
+
+</p>
+
 </div>
 
 <div class="card">
-<h3>🌎 Country Analysis</h3>
-<p>Country-wise Sales Visualization.</p>
+
+<h3>💰 Profit Analysis</h3>
+
+<p>
+
+Product-wise profit comparison.
+
+</p>
+
 </div>
 
 <div class="card">
-<h3>🎛 Interactive Slicers</h3>
-<p>Year, Product and Segment Filters.</p>
+
+<h3>🌍 Country Analysis</h3>
+
+<p>
+
+Country-wise financial insights.
+
+</p>
+
 </div>
 
 <div class="card">
+
+<h3>🎛 Interactive Filters</h3>
+
+<p>
+
+Dynamic slicers for Year,
+Country,
+Segment,
+Product.
+
+</p>
+
+</div>
+
+<div class="card">
+
 <h3>⚡ Power BI</h3>
-<p>Created using Microsoft Power BI Desktop.</p>
+
+<p>
+
+Developed using Microsoft Power BI Desktop.
+
+</p>
+
 </div>
 
-<div class="card">
-<h3>📱 Responsive</h3>
-<p>Optimized for Desktop and Mobile.</p>
 </div>
 
-</div>
+</section>
+
+<section id="about">
+
+<h2>
+
+About Project
+
+</h2>
+
+<p>
+
+This Finance Dashboard was developed to analyze financial performance using Microsoft Power BI.
+The dashboard includes KPI Cards,
+Sales Trends,
+Profit Analysis,
+Country Analysis,
+Product Performance,
+Interactive Filters,
+Charts and Reports to support business decision making.
+
+</p>
 
 </section>
 
 <section id="developer">
 
-<h2 class="title">
+<h2>
 
 Developer
 
 </h2>
 
-<div class="dashboard" style="text-align:center;">
+<h3>
 
-<h2>Abhijit Vishwakarma</h2>
+Abhijit Vishwakarma
 
-<p style="margin-top:15px;font-size:18px;">
+</h3>
 
-Bachelor of Computer Applications (BCA)
+<p>
 
-</p>
-
-<p style="margin-top:15px;">
-
-Finance Dashboard Project using Microsoft Power BI
+Bachelor of Science (B.Sc.)
 
 </p>
 
-</div>
+<p>
+
+Finance Dashboard Project
+
+</p>
 
 </section>
-
-</div>
 
 <footer>
 
@@ -367,5 +287,8 @@ Finance Dashboard Project using Microsoft Power BI
 
 </footer>
 
+<script src="script.js"></script>
+
 </body>
+
 </html>
